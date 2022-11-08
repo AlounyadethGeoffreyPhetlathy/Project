@@ -1,0 +1,81 @@
+html {
+          background-color: #920eb3;
+}
+p {
+          
+          font-size: 7rem;
+          font-weight: bold;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-style: italic;
+          color: white;
+          margin-bottom: 1px;
+          margin-Top: 2rem;
+          margin-left: 200rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-shadow: 3px 3px black;
+}
+#container {
+    animation: scrollDown 4s ease-in 4.5s 1 normal forwards;
+}
+#firstname {
+          animation: firstnameSpawn 7s ease 0s 1 normal forwards;
+}
+#middlename {
+          animation: middlenameSpawn 7s ease 200ms 1 normal forwards;
+}
+#lastname {
+          animation: lastnameSpawn 7s ease 400ms 1 normal forwards;
+}
+#created {
+    font-size: 5rem;
+    margin-left: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+#nextPage {
+    opacity: 0;
+    width: 12rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    animation: appearFunction 4.5s linear 5s 1 normal forwards;
+}
+a {
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes firstnameSpawn {
+          20% {margin-left: 0rem}
+          30% {margin-left: 0rem; color: rgb(235, 14, 14)}
+          40% {margin-left: 0rem; color: yellow}
+          50% {margin-left: 0rem; color: white}
+          90% {margin-left: 0rem}
+          100% {margin-left: 0rem}
+}
+@keyframes middlenameSpawn {
+          20% {margin-left: 0rem}
+          30% {margin-left: 0rem; color: rgb(4, 207, 4)}
+          40% {margin-left: 0rem; color: yellow}
+          50% {margin-left: 0rem; color: white}
+          90% {margin-left: 0rem}
+          100% {margin-left: 0rem}
+}
+@keyframes lastnameSpawn {
+          20% {margin-left: 0rem}
+          30% {margin-left: 0rem; color: rgb(13, 88, 249)}
+          40% {margin-left: 0rem; color: yellow}
+          50% {margin-left: 0rem; color: white}
+          90% {margin-left: 0rem}
+          100% {margin-left: 0rem}
+}
+@keyframes scrollDown {
+    100% {transform: translate(0px, 1000px)}
+}
+@keyframes appearFunction {
+    100% {opacity: 1;}
+}

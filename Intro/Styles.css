@@ -1,5 +1,7 @@
 html {
-          background-color: #920eb3;
+          background: linear-gradient(to bottom right, purple 0%, orange 100%);
+          background-repeat: no-repeat;
+          height: 800px;
 }
 p {
           
@@ -16,8 +18,9 @@ p {
           align-items: center;
           text-shadow: 3px 3px black;
 }
-#container {
-    animation: scrollDown 4s ease-in 4.5s 1 normal forwards;
+#eone, #etwo {}
+.container {
+    height: 130px;
 }
 #firstname {
           animation: firstnameSpawn 7s ease 0s 1 normal forwards;
@@ -27,6 +30,26 @@ p {
 }
 #lastname {
           animation: lastnameSpawn 7s ease 400ms 1 normal forwards;
+}
+#eone {
+    width: auto;
+}
+#one {
+    animation: scrollDown 2700ms ease-in 5000ms 1 normal forwards;
+}
+#two {
+    animation: scrollDown 2s ease-in 5000ms 1 normal forwards;
+}
+#three {
+    animation: scrollDown 2s ease-in 4800ms 1 normal forwards;
+}
+#four {
+    animation: scrollDown 2s ease-in 4600ms 1 normal forwards;
+}
+#five {
+    position: absolute;
+    top: 1400px;
+    animation: scrollUp 2s ease-in 5500ms 1 normal forwards;
 }
 #created {
     font-size: 5rem;
@@ -74,7 +97,10 @@ a {
           100% {margin-left: 0rem}
 }
 @keyframes scrollDown {
-    100% {transform: translate(0px, 1000px)}
+    100% {transform: translate(0px, 1200px)}
+}
+@keyframes scrollUp {
+    100% {transform: translate(0px, -1200px)}
 }
 @keyframes appearFunction {
     100% {opacity: 1;}

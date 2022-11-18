@@ -1,0 +1,14 @@
+html {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    width: 25rem;
+    display: none;
+}
+button {
+    width: 100px;
+    height: 40px;
+}
